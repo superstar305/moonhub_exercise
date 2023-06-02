@@ -1,0 +1,64 @@
+:root {
+  --circle-size: 10px;
+  --spacing: 3px;
+}
+
+.Stepper-title {
+  color: #161430;
+  font-style: italic;
+  font-weight: 400;
+  width: 100px;
+  margin: 15px 0px;
+}
+
+.Stepper-stepper-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 400;
+  &:before {
+    content: "";
+    margin-top: 2px;
+    flex: 0 0 var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    background-color: #ededed;
+  }
+
+  &:not(:last-child) {
+    &:after {
+      content: "";
+      margin-top: 2px;
+      position: absolute;
+      // top: calc(var(--circle-size) + var(--spacing) + 1);
+      top: calc(50% + 10px);
+      bottom: clac(var(--spacing) + 1);
+      transform: translateX(calc(var(--circle-size) / 2));
+      width: 1px;
+      height: calc(100% - 20px);
+      background-color: #ededed;
+    }
+  }
+}
+
+.Stepper-stepper-content {
+  color: #120f2c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Stepper-stepper-logo {
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px;
+}
+
+.Stepper-stepper-desc {
+  color: grey;
+}
+
+.Stepper-wrapper {
+  display: flex;
+}

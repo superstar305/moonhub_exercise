@@ -1,0 +1,48 @@
+.UserCard-content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 10px 50px;
+  border-radius: 7px;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.UserCard-title-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.UserCard-stepper {
+  padding-right: 40px;
+}
+.UserCard-title {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.UserCard-name {
+  font-weight: 500;
+  font-style: italic;
+  color: #2e2c45;
+}
+
+.UserCard-subTitle {
+  display: flex;
+}
+.UserCard-currentTitle {
+  color: #161430;
+  font-weight: 400;
+}
+
+.UserCard-location {
+  color: #89888d;
+  font-weight: 400;
+}
+.UserCard-line {
+  border: #f2f2f2 1px solid;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
